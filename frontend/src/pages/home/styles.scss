@@ -1,0 +1,63 @@
+.home{
+    .headlineContainer {
+        max-width: 80%;
+        margin-top: 9rem;
+        display: block;
+    }
+    
+    .pageRow {
+        margin-top: 10rem;
+    }
+    
+    .headerTextsColor {
+        color: #0E004A;
+    }
+    
+    .subTextColor {
+        color: #453878;
+    }
+    
+    .twinkleName {
+        font-size: 20px;
+        color: #453878;
+    }
+    
+    .typewriter {
+        font-family: monospace;
+        font-size: 3rem;
+        color: #0000;
+        background:
+            linear-gradient(-90deg, #453878 5px, #0000 0) 10px 0,
+            linear-gradient(#453878 0 0) 0 0;
+        background-size: calc(var(--n)*1ch) 200%;
+        -webkit-background-clip: padding-box, text;
+        background-clip: padding-box, text;
+        background-repeat: no-repeat;
+        animation:
+            b .7s infinite steps(1),
+            t calc(var(--n)*.3s) steps(var(--n)) forwards;
+    }
+    
+    @keyframes t {
+        from {
+            background-size: 0 200%
+        }
+    }
+    
+    @keyframes b {
+        50% {
+            background-position: 0 -100%, 0 0
+        }
+    }
+    
+    .uploadBtn {
+        background-color: #6A65FF;
+        color: white;
+    }
+      
+      .uploadBtn:hover {
+        background-color: white;
+        color: #6A65FF;
+        border-color: #6A65FF;
+    }
+}

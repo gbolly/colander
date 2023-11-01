@@ -1,0 +1,23 @@
+.navBar {
+    .navContainer {
+        max-width: 1312px;
+        margin: 0 auto;
+        padding: 0 64px;
+    }
+    
+    .signUpbtn {
+        background-color: #0E004A;
+        font-weight: 500;
+        opacity: 1;
+        color: rgb(255 255 255);
+    
+        &:hover {
+            background-color: #453878;
+            border: 1px white;
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    }
+}
