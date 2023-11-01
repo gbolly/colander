@@ -1,0 +1,223 @@
+// https://freefrontend.com/css-cards/
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #00000020;
+    border-radius: 0.8rem;
+
+    .card-footer,
+    .card-img {
+        border-bottom-right-radius: 0.8rem;
+        border-bottom-left-radius: 0.8rem;
+    }
+
+    .card-link {
+        font-size: 1rem;
+    }
+
+    .card-link {
+        letter-spacing: 0.0178571em;
+        font-weight: 500;
+    }
+
+    .card-smooth-caption,
+    .card-img-overlay {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .card-img-overlay {
+        top: 0;
+        padding: 1.25rem;
+        border-radius: 0.8rem;
+    }
+
+    .card-img-overlay.three {
+        content: " ";
+        height: 140px;
+        width: 100%;
+        display: block;
+        position: relative;
+        background-size: cover;
+        border-radius: 12px 12px 2px 2px;
+        background-position: 50% 50%;
+    }
+
+    .card-smooth-caption {
+        background: linear-gradient(#9e93ca00, #9d8edafa) #776aa900;
+        padding: 2rem 1.5rem 1.5rem;
+    }
+
+    .card-footer {
+        padding: 1.5rem;
+        background-color: transparent;
+        border-top: 0;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 1rem 1.25rem;
+
+        .skills{
+            font-family: Roboto, sans-serif;
+            line-height: 1.5rem;
+        }
+    }
+
+    .card-title {
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        font-family: Roboto;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .text-muted,
+    .read-more {
+        font-family: Roboto, sans-serif !important;
+    }
+
+    .card-subtitle,
+    .card-text:last-child {
+        margin-bottom: 0;
+    }
+
+    .card-subtitle {
+        font-weight: 400;
+        margin-top: 0.2rem;
+    }
+
+    .card-link+.card-link {
+        margin-left: 1.5rem;
+    }
+
+    .card-footer:last-child {
+        border-radius: 0 0 0.8rem 0.8rem;
+    }
+
+    .footerright {
+        display: inline-flex;
+        align-items: center;
+        height: 100%;
+        gap: 1rem;
+        justify-content: right;
+
+        .tnlink3 {
+            display: inline-flex;
+            height: max-content;
+            width: max-content;
+            justify-content: center;
+            align-items: center;
+            color: #0007;
+            font-size: 1rem;
+            background: #fff;
+            border: 0;
+        }
+    }
+
+    span.badge.badge-light {
+        padding: 3.5px 5.5px;
+        font-size: 12px;
+        background-image: linear-gradient(#c1353e, #c22b3a, #e42d49, #e32c3e);
+        box-shadow: 0 0 0.25px #e42d49,
+            -0.5px -0.75px 1px rgb(241 249 255 / 15%) inset,
+            -0.75px -1.5px 1.5px rgb(44 6 13 / 5%) inset, 0 -0.5px 0.75px 0.25px #c1353e,
+            0 0.5px 0.75px 0.25px #e32c3e, 0 -0.75px 2px -0.75px #c1353e,
+            0 0.75px 2px -0.75px #e32c3e, -0.5px -2px 3px 0.75px rgb(44 6 13 / 85%),
+            -1.75px -2.5px 2.5px -0.25px rgb(150 90 64 / 35%),
+            -0.75px -0.75px 0.625px 0.25px rgb(150 90 64 / 50%),
+            -0.85px -0.35px 0.85px 0 rgb(201 149 135 / 55%),
+            -1.25px -1.25px 1.65px 0 rgb(201 149 135 / 25%);
+        border-radius: 4px;
+        font-family: Roboto;
+        color: #fff;
+    }
+
+    .badge-warning3 {
+        background-image: linear-gradient(
+        hsl(40deg 80% 60%),
+        hsl(38deg 87% 58%),
+        hsl(35deg 100% 66%),
+        hsl(38deg 100% 65%)
+      ) !important;
+        box-shadow: 0 0 0.25px hsl(35deg 100% 66%),
+        -0.5px -0.75px 1px hsl(206deg 100% 97% / 15%) inset,
+        -0.75px -1.5px 1.5px hsl(349deg 76% 10% / 5%) inset,
+        0 -0.5px 0.75px 0.25px hsl(40deg 80% 60%),
+        0 0.5px 0.75px 0.25px hsl(38deg 100% 65%),
+        0 -0.75px 2px -0.75px hsl(40deg 80% 60%),
+        0 0.75px 2px -0.75px hsl(38deg 100% 65%),
+        -0.5px -2px 3px 0.75px hsl(33deg 99% 10% / 85%),
+        -1.75px -2.5px 2.5px -0.25px hsl(62deg 63% 54% / 35%),
+        -0.75px -0.75px 0.625px 0.25px hsl(62deg 63% 54% / 50%),
+        -0.85px -0.35px 0.85px 0 hsl(57deg 61% 89% / 55%),
+        -1.25px -1.25px 1.65px 0 hsl(57deg 61% 89% / 25%) !important;
+    }
+
+    .badge-success {
+        background-image: linear-gradient(
+        hsl(148, 80%, 60%),
+        hsl(148 87% 58%),
+        hsl(145 100% 66%),
+        hsl(148 100% 65%)
+      ) !important;
+        box-shadow: 0 0 0.25px hsl(145 100% 66%),
+        -0.5px -0.75px 1px hsla(155, 86%, 11%, 0.15) inset,
+        -0.75px -1.5px 1.5px hsl(175 76% 10% / 5%) inset,
+        0 -0.5px 0.75px 0.25px hsl(150 80% 60%),
+        0 0.5px 0.75px 0.25px hsl(148 100% 65%),
+        0 -0.75px 2px -0.75px hsl(140 80% 60%),
+        0 0.75px 2px -0.75px hsl(148 100% 65%),
+        -0.5px -2px 3px 0.75px hsl(143 99% 10% / 85%),
+        -1.75px -2.5px 2.5px -0.25px hsl(62deg 63% 54% / 35%),
+        -0.75px -0.75px 0.625px 0.25px hsl(62deg 63% 54% / 50%),
+        -0.85px -0.35px 0.85px 0 hsl(57deg 61% 89% / 55%),
+        -1.25px -1.25px 1.65px 0 hsl(57deg 61% 89% / 25%) !important;
+    }
+
+    span.badge {
+        font-weight: 400;
+        border-radius: 5px !important;
+        letter-spacing: 0.135em !important;
+        font-family: antique-olive !important;
+        padding: 4px 5px !important;
+        box-shadow: 0 0 0.25px hsl(208deg 7% 46%),
+            -0.5px -0.75px 1px 0.25px hsl(206deg 100% 97% / 30%) inset,
+            -0.75px -1.5px 1.5px 0.5px hsl(349deg 5% 10% / 10%) inset,
+            0 -0.5px 0.75px 0.25px hsl(210deg 17% 50% / 15%),
+            0 0.5px 0.75px 0.25px hsl(210deg 17% 50% / 15%),
+            0 -0.75px 2px -0.75px hsl(210deg 16% 50% / 15%),
+            0 0.75px 2px -0.75px hsl(0deg 0% 4% / 25%),
+            -0.5px -2px 3px 0.75px hsl(349deg 4% 10% / 10%),
+            -1.75px -2.5px 2.5px -0.25px hsl(0deg 0% 42% / 7%),
+            -0.75px -0.75px 0.625px 0.25px hsl(18deg 40% 2% / 10%),
+            -0.85px -0.35px 0.85px 0 hsl(13deg 38% 4% / 12%),
+            -1.25px -1.25px 1.65px 0 hsl(13deg 38% 4% / 5%);
+    }
+
+    .read-more {
+        border-radius: 5px !important;
+        letter-spacing: 0.5px !important;
+        box-shadow: 0 1px 3px #0000001a, 0 1px 2px #00000033, inset 1px 1px 1px #ffffff99, inset -1px -1px 1px #0c0d120f, -1px -1px 1px #ffffff99, -1px -1px 4px #ffffff99, -2px -2px 8px #ffffff99, 1px 1px 1px #0c0d120f, 1px 1px 4px #0c0d120f, 2px 2px 8px #0c0d120f !important;
+        background-color: hsl(228deg 14% 93%);
+        text-shadow: 0.25px 0.25px 0.25px hsl(233deg 5% 26% / 85%),
+            0.35px 0.35px 0.35px hsl(233deg 5% 26% / 85%), 0 -1.1px 0 rgb(12 13 18 / 8%),
+            0 1.2px 0 #fff !important;
+        color: hsl(233deg 5% 26%) !important;
+        font-weight: 300 !important;
+        border: none !important;
+        padding: 6px 12px;
+        text-transform: uppercase;
+        font-size: 11px;
+        text-decoration: none;
+    }
+}
