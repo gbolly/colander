@@ -1,7 +1,7 @@
 import os
 from typing import Any
 
-from pydantic import PostgresDsn, RedisDsn, model_validator, ValidationError
+from pydantic import PostgresDsn, ValidationError
 from pydantic_settings import BaseSettings
 
 from src.constants import Environment
@@ -14,14 +14,6 @@ class Config(BaseSettings):
     CORS_ORIGINS: list[str] = ["http://localhost:3000"]
     CORS_HEADERS: list[str] = ["*"]
     APP_VERSION: str = "1"
-
-    # @model_validator(mode="after")
-    # def validate_sentry_non_local(self) -> "Config":
-    #     if self.ENVIRONMENT.is_deployed and not self.SENTRY_DSN:
-    #         raise ValueError("Sentry is not set")
-
-    #     return self
-
 
 # database = PostgresDsn(
 #     scheme="postgresql",
