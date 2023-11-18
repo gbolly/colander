@@ -1,4 +1,5 @@
 from enum import Enum
+import os
 
 
 class Environment(str, Enum):
@@ -6,6 +7,7 @@ class Environment(str, Enum):
     STAGING = "STAGING"
     TESTING = "TESTING"
     PRODUCTION = "PRODUCTION"
+    CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "").split(",")
 
     @property
     def is_debug(self):

@@ -40,7 +40,7 @@ const CandidateList = () => {
         redirect: 'follow'
       }
   
-      fetch('http://127.0.0.1:8080/resume-parser/process', reqData)
+      fetch('http://127.0.0.1:8080/api/v1/resume-parser/process', reqData)
         .then(response => {
           if (response.ok) {
             return response.json().then((data) => {

@@ -160,7 +160,10 @@ def jaccard_similarity(user_skill_set, job_skill_set):
 def skill_match_score(user_skills: list = [], job_skills: list = []) -> int:
     # score = jaccard_similarity(set(user_skills), set(job_skills))
     score = len(set(user_skills).intersection(job_skills))
-    percentage_score = (score / len(job_skills)) * 100
+    try:
+        percentage_score = (score / len(job_skills)) * 100
+    except:
+        percentage_score = 1
 
     return ceil(percentage_score)
 

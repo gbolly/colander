@@ -5,13 +5,11 @@ from mangum import Mangum
 from src.config import app_configs, settings
 from src.resume_parser.router import router as jury_router
 
-
 app = FastAPI(**app_configs)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.CORS_ORIGINS,
-    # allow_origin_regex=settings.CORS_ORIGINS_REGEX,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"),
     allow_headers=settings.CORS_HEADERS,
